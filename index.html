@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vinuthna | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #fff0f5, #ffe4ec);
+    color: #333;
+}
+
+/* Navbar */
+nav {
+    position: sticky;
+    top: 0;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    z-index: 1000;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #ff4f7b;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #ff1f5a;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    background: linear-gradient(135deg, #ff4f7b, #ff85a1);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.hero p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* Container */
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Cards */
+.card {
+    background: rgba(255,255,255,0.7);
+    backdrop-filter: blur(12px);
+    border-radius: 15px;
+    padding: 25px;
+    margin: 20px 0;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+}
+
+h2 {
+    color: #ff4f7b;
+    margin-bottom: 10px;
+}
+
+/* Tags */
+.tag {
+    display: inline-block;
+    background: #ffd6e0;
+    padding: 6px 14px;
+    border-radius: 20px;
+    margin: 5px 5px 0 0;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.tag:hover {
+    background: #ff4f7b;
+    color: white;
+}
+
+/* List */
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin: 6px 0;
+}
+
+/* Contact */
+.contact {
+    text-align: center;
+}
+
+.contact a {
+    color: #ff4f7b;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #ffc2d1;
+    margin-top: 30px;
+}
+
+/* Animation */
+.fade {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+    <h1>Chada Vinuthna</h1>
+    <p>CSE Student | Aspiring Software Engineer</p>
+</section>
+
+<div class="container">
+
+    <div id="about" class="card fade">
+        <h2>About Me</h2>
+        <p>I am a first-year Computer Science student and an aspiring software engineer, passionate about building simple and useful software. I am currently learning core programming concepts and exploring modern technologies.</p>
+    </div>
+
+    <div id="skills" class="card fade">
+        <h2>Skills</h2>
+        <div class="tag">C Programming</div>
+        <div class="tag">Basic C++</div>
+        <div class="tag">AutoCAD</div>
+    </div>
+
+    <div id="projects" class="card fade">
+        <h2>Projects</h2>
+        <ul>
+            <li><strong>Hospital Management System</strong> (C) – Includes patient management and hospital capacity checking.</li>
+            <li><strong>Basic Calculator</strong> – Performs arithmetic operations.</li>
+        </ul>
+    </div>
+
+    <div class="card fade">
+        <h2>Education</h2>
+        <p>B.Tech in Computer Science Engineering (1st Year)<br>
+        Chaitanya Bharathi Institute of Technology</p>
+    </div>
+
+    <div class="card fade">
+        <h2>Activities</h2>
+        <p>Completed a Value Added Course in C++</p>
+    </div>
+
+    <div class="card fade">
+        <h2>Currently Learning</h2>
+        <div class="tag">Data Structures</div>
+        <div class="tag">Web Development</div>
+        <div class="tag">System Design</div>
+    </div>
+
+    <div id="contact" class="card contact fade">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:cvinuthnacbit@gmail.com">cvinuthnacbit@gmail.com</a></p>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 Chada Vinuthna</p>
+</footer>
+
+</body>
+</html>
